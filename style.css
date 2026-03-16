@@ -1,0 +1,264 @@
+/* ----- RESET / BASE ----- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #eef2f5;
+  font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a2634;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* main card */
+.resume {
+  max-width: 1050px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  transition: all 0.2s;
+  border: 1px solid #e9ecf0;
+}
+
+.resume-inner {
+  padding: 2.2rem 2.5rem;
+}
+
+/* ----- TYPOGRAPHY ----- */
+h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: #0a1e2f;
+  line-height: 1.15;
+  margin-bottom: 0.25rem;
+}
+
+.subhead {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #2c3e50;
+  margin-bottom: 0.75rem;
+  border-bottom: 2px solid #dde3e9;
+  padding-bottom: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subhead .badge {
+  background: #e6edf5;
+  padding: 0.3rem 1rem;
+  border-radius: 40px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1e3b5c;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #0f2b3f;
+  border-left: 5px solid #4070a0;
+  padding-left: 1rem;
+  margin: 1.5rem 0 1rem 0;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1d3f5e;
+  margin: 1rem 0 0.3rem 0;
+}
+
+/* contact bar */
+.contact-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  align-items: center;
+  background: #f8fafd;
+  padding: 1rem 1.5rem;
+  border-radius: 60px;
+  margin: 1rem 0 1.8rem 0;
+  border: 1px solid #dfe6ed;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.98rem;
+  color: #1f3a57;
+}
+
+.contact-item i {
+  width: 1.2rem;
+  color: #4070a0;
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  color: #1f3a57;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  transition: border 0.1s;
+}
+
+.contact-item a:hover {
+  border-bottom: 1px dotted #4070a0;
+}
+
+/* two‑col grid */
+.two-col {
+  display: grid;
+  grid-template-columns: 1fr 1.9fr;
+  gap: 2.2rem;
+  margin-top: 0.5rem;
+}
+
+/* left panel */
+.left-panel {
+  background: #f9fcff;
+  padding: 1.5rem 1.4rem;
+  border-radius: 24px;
+  border: 1px solid #e2eaf2;
+}
+
+.left-panel section {
+  margin-bottom: 2rem;
+}
+
+.left-panel h2 {
+  font-size: 1.3rem;
+  border-left-width: 4px;
+  padding-left: 0.8rem;
+  margin: 0 0 1rem 0;
+  border-left-color: #5a7ca0;
+}
+
+/* lists */
+ul {
+  list-style: none;
+  padding-left: 0.2rem;
+}
+
+li {
+  margin-bottom: 0.6rem;
+  padding-left: 1.6rem;
+  position: relative;
+}
+
+li::before {
+  content: "▹";
+  position: absolute;
+  left: 0;
+  color: #4070a0;
+  font-weight: 600;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.6rem;
+  margin-top: 0.5rem;
+}
+
+.skill-tag {
+  background: white;
+  border: 1px solid #bfd4e6;
+  padding: 0.3rem 1rem;
+  border-radius: 30px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #1f3a57;
+}
+
+/* right panel */
+.right-panel .project-card {
+  background: #ffffff;
+  border: 1px solid #e9edf3;
+  border-radius: 20px;
+  padding: 1.2rem 1.5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+}
+
+.project-title {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #11324e;
+  margin-bottom: 0.5rem;
+}
+
+.project-title i {
+  color: #4070a0;
+  font-size: 1.3rem;
+}
+
+.project-desc {
+  color: #253c54;
+  margin-left: 2rem;
+  font-size: 0.95rem;
+}
+
+.project-desc p {
+  margin-top: 0.2rem;
+}
+
+.highlight {
+  background: #f0f6fe;
+  padding: 1rem 1.5rem;
+  border-radius: 18px;
+  border-left: 4px solid #4070a0;
+  margin: 1.5rem 0 0.5rem;
+  font-weight: 400;
+}
+
+.highlight i {
+  color: #2b4a6b;
+  margin-right: 0.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px dashed #d1deeb;
+  margin: 1rem 0;
+}
+
+.meta {
+  font-size: 0.85rem;
+  color: #4f6f8f;
+  display: block;
+  margin: 0.25rem 0 0.4rem;
+}
+
+/* responsiveness */
+@media (max-width: 750px) {
+  .resume-inner {
+    padding: 1.5rem;
+  }
+  .two-col {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .contact-bar {
+    gap: 1rem;
+    border-radius: 30px;
+    padding: 0.8rem 1.2rem;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+}
